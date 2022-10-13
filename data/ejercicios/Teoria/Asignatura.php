@@ -31,6 +31,17 @@ ORIENTACION A OBJETOS
     Metodos: lowerCamelCase
     java: this.attr
     php: $this->attr
+
+    -Interfaces, clases abstract
+    - objetos
+    - polimorfismo: sobrecarga de metodos
+    - sobrecarga de motodos ? -> NO*
+     - sobrecarga constructores ? -> NO*
+    - herencia unica -> extends
+     - Invocar algo del padre : parent::
+     $this->metodo
+     $this->atributo
+     static contador;
 */
 class Asignatura
 {

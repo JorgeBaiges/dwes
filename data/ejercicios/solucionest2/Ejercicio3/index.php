@@ -12,7 +12,7 @@
         <form name="ej3" action="#" method="post">
             <p>
                 <label for="nombre">Introduce un nombre: </label>
-                <input type="text" name="nombre" id="nombre" required>
+                <input type="text" name="nombre" id="nombre">
             </p>
             <button type="submit" name="envio" id="envio" value="Enviar">Enviar</button>
         </form>

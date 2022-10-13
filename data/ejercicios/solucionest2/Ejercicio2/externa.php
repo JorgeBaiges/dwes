@@ -9,6 +9,6 @@ if(isset($_POST['envio'])){
         print "Tira a poner un nombre";
     }
 
-    print "<br><a href='/solucionest2/Ejercicio2/main.html'>Vuelve al formulario</a>";
+    print "<><a href='/solucionest2/Ejercicio2/main.html'>Vuelve al formulario</a>";
 
 }
