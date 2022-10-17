@@ -41,5 +41,5 @@
         $textoinsertar = "Esto es otra linea<br>";
         fwrite($fp2, $textoinsertar);
     }
-  
+
     fclose($fp2);

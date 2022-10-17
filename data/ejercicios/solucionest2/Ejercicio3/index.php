@@ -12,7 +12,7 @@
         <form name="ej3" action="#" method="post">
             <p>
                 <label for="nombre">Introduce un nombre: </label>
-                <input type="text" name="nombre" id="nombre">
+                <input type="text" name="nombre" id="nombre" required>
             </p>
             <button type="submit" name="envio" id="envio" value="Enviar">Enviar</button>
         </form>
@@ -26,7 +26,7 @@
                     print "El nombre no mide mas de tres caracteres";
                 }
             }else{
-                print "Tira a poner un nombre";
+                print "Pon un nombre";
             }
         ?>
     </body>
