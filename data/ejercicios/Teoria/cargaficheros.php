@@ -8,10 +8,21 @@
 </head>
 <body>
     <?php
+
+    if(isset($_POST["envio"])){
         print "Nombre del fichero: " . $_FILES["myfile"]["name"];
         print "<br>Tipo del fichero: " . $_FILES["myfile"]["type"] ;
         print "<br>Tamaño del fichero: " . $_FILES["myfile"]["size"] ;
         print "<br>Nombre del fichero temporal: " . $_FILES["myfile"]["tmp_name"] ;
+        //
+        $destino = "subidos/".$_FILES["myfile"]["name"];
+        $flag = move_uploaded_file($_FILES["myfile"]["tmp_name"], $destino);
+        print "<br>";
+        print $flag ? "Fichero subido correctamente" : "fallo al subir";
+        //
+    }else{
+        print "<p>No has enviado ningun fichero";
+    }
     ?>
 </body>
 </html>
