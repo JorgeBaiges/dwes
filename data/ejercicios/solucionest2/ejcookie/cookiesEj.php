@@ -16,19 +16,19 @@
     <title>cookies</title>
 </head>
 <body>
-    <form action="/solucionest2/ejcookie/externa.php" method="get">
+    <form action="/solucionest2/ejcookie/externa.php" method="post">
         <p>
             <h3>SELECCINE EL IDIOMA</h3>
             <select name="idioma" id="idioma">
                 <option value="espanol">ESPAÑOL</option>
                 <option value="ingles">INGLES</option>
-                <option value="aleman">AlEMAN</option>
+                <option value="aleman">ALEMAN</option>
             </select>
         </p>
 
         <p>
             <h3>SELECCINE LA MARCA DE COCHE</h3>
-            <select name="coche" id="coche">
+            <select name="marca" id="marca">
                 <option value="renault">RENAULT</option>
                 <option value="BMW">BMW</option>
                 <option value="mercedes">MERCEDES</option>
