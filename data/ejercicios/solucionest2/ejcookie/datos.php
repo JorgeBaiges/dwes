@@ -17,8 +17,8 @@ switch($_COOKIE['idioma']){
         print "<br>Ihre Lieblingsmarke ist: " . $_COOKIE['marca'];
         break;
 
-        default: 
-            print "<h1>Bienvenido querido usuario.</h1>";
+        default:
+            print "<h1>Bienvenido querido usuario.(Pagina Default)</h1>";
             print "<br>TU marca favorita es: " . $_COOKIE['marca'];
             break;
 }
