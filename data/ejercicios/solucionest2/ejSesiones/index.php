@@ -1,3 +1,35 @@
+<?php
+function comprobarcredenciales($nombreusu, $clave){
+
+    if($nombreusu == "usuario" && $clave == "1234"){
+        $credenciales["nombreusu"] = "usuario";
+        $credenciales["rol"] = 0;
+        return $credenciales;
+    }
+    if($nombreusu == "admin" && $clave == "4567"){
+        $credenciales["nombreusu"] = "admin";
+        $credenciales["rol"] = 1;
+        return $credenciales;
+    }
+    return false;
+}
+
+if($_SERVER["REQUEST_METHOD"] === "POST") {
+    if(isset($_POST["envio"])){
+        $credentials = comprobarcredenciales($_POST["usuario"], $_POST["password"]);
+        if($credentials === false){
+            $error = 1;
+        }else{
+            session_start();
+            $_SESSION["loginok"] = $credentials;
+            header("Location : principal.php");
+        }
+    }
+
+}
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,22 +39,16 @@
     <title>Pagina Principal</title>
 </head>
 <body>
-    <form action="sesiones.php" method="post">
-        <p>
-            <label for="nombre">Introduce el usuario</label>
-            <input type="text" name="usu" id="usu">
-        </p>
-        <p>
-            <label for="password">Introduce una contraseña</label>
-            <input type="password" name="pass" id="pass">
-        </p>
-        <button type="submit" name="envio" id="envio" value="Enviar">Enviar</button>
-    <?php
-        if(!isset($_POST['enviar'])){
-            if(!empty($_POST['usu']) && !empty($_POST['pass']))
-        }
-
-    ?>
+    <h2>Pagina de acceso</h2>
+    <form action="#" method="POST">
+        <br>
+        <label for="nombre">Introduce el usuario</label>
+        <input type="text" name="usuario" id="usuario">
+        <br>
+        <label for="password">Introduce una contraseña</label>
+        <input type="password" name="password" id="password">
+        <br>
+        <input type = "submit" name="envio" value= "Acceder">
     </form>
 </body>
 </html>
