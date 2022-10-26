@@ -1,4 +1,5 @@
 <?php
+
 function comprobarcredenciales($nombreusu, $clave){
 
     if($nombreusu == "usuario" && $clave == "1234"){
@@ -20,14 +21,14 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
         if($credentials === false){
             $error = 1;
         }else{
+            
             session_start();
             $_SESSION["loginok"] = $credentials;
-            header("Location : principal.php");
+            header("Location: principal.php");
         }
     }
 
 }
-
 
 ?>
 <!DOCTYPE html>
@@ -40,7 +41,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
 </head>
 <body>
     <h2>Pagina de acceso</h2>
-    <form action="#" method="POST">
+    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
         <br>
         <label for="nombre">Introduce el usuario</label>
         <input type="text" name="usuario" id="usuario">
