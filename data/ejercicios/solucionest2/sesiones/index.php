@@ -41,6 +41,13 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
 </head>
 <body>
     <h2>Pagina de acceso</h2>
+    <?php
+
+    if(isset($error) && $error == 1){
+        print "Credenciales incorrectas";
+
+    }
+    ?>
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
         <br>
         <label for="nombre">Introduce el usuario</label>
