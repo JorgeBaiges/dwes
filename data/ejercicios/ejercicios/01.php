@@ -14,6 +14,14 @@
     <body>
         <h1>Ejercicio 1</h1>
         <?php
+        /*
+        * @author <Jorge Baiges Ruiz>
+        * @param String nombre;
+        * @param String apellidos;
+        * @param int edad;
+        * @param String telefono;
+        * @param String email;
+        */
         $nombre = "Jorge";
         $apellidos = "Baiges Ruiz";
         $edad = 21;

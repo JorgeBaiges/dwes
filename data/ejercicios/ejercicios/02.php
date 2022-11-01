@@ -8,6 +8,12 @@
     </head>
     <body>
         <?php
+        /*
+        * @author <Jorge Baiges Ruiz>
+        * @param const int OCHO
+        * @param int x
+        * @param int resultado
+        */
             const OCHO = 8;
             $x = 1;
             $resultado = 0;

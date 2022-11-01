@@ -8,6 +8,10 @@
     </head>
     <body>
         <?php
+        /*
+         * @author <Jorge Baiges Ruiz>
+         * @param array miArray 
+         */
             $miArray = array("base", "escolta", "alero", "alapivo", "pivot");
             $array = [
                 "base",
@@ -18,6 +22,9 @@
             ];
             print "<h1>Ejercicio 6</h1>";
             print "El equipo de baloncesto esta compuesto de:<br>";
+            /**
+             * Muestro el array por posicion en una lista html
+             */
             print "
             <ul>
                 <li>" . $array[0] . "</li>

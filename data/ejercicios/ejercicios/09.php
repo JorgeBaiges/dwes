@@ -8,6 +8,10 @@
 </head>
 <body>
     <?php
+    /*
+     * @author <Jorge Baiges Ruiz>
+     * @param  array paises
+     */
         print "<h1>Ejercicio 9</h1>";
         $paises = array();
             $paises[0] = "España";

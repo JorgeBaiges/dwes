@@ -8,6 +8,11 @@
     </head>
     <body>
     <?php
+    /*
+    * @author <Jorge Baiges Ruiz>
+    * @param int x
+    * @param int contador
+    */
         print "<h1>Ejercicio 3</h1>";
         print "<h2>Numeros divisibles por 3</h2>";
         $x = 1;

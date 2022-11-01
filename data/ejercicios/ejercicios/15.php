@@ -23,7 +23,11 @@
     </form>
 
     <?php
-
+    /*
+     * @author <Jorge Baiges Ruiz>
+     * @param int conteo
+     * @param String[] de nombres
+     */
         if(isset($_POST['envio'])){
             if (!empty($_POST['nombres'])) {
                 $conteo = 0;
@@ -37,7 +41,7 @@
                 }
             } else {
     
-                print "<br>No sabes comer";
+                print "<br>No hay nombres";
             }
 
         }

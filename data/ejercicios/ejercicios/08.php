@@ -8,8 +8,14 @@
 </head>
 <body>
     <?php
+    /*
+     * @author <Jorge Baiges Rui>
+     * @param array basquet 
+     */
         print "<h1>Ejercicio 8</h1>";
-
+    /*
+     * Añado los elementos por posicion
+     */
         $basquet = array();
         $basquet[0] = "base";
         $basquet[1] = "escolta";

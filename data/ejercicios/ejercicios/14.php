@@ -30,18 +30,31 @@
         </form>
 
         <?php
+        /*
+         * @author <Jorge Baiges Ruiz>
+         * @param int var1
+         * @param int var2
+         * @param int variable1
+         * @param int varaible2
+         */
+
+        /* Funcion que devuelve el resultado de una suma de dos digitos*/
             function suma($var1, $var2){
                 return $var1 + $var2;
             }
+        /* Funcion que devuelve el resultado de una resta de dos digitos*/
             function resta($var1, $var2){
                 return $var1 - $var2;
             }
+        /* Funcion que devuelve el resultado de una multiplicacion de dos digitos*/
             function multiplicacion($var1, $var2){
                 return $var1 * $var2;
             }
+        /* Funcion que devuelve el resultado de una division de dos digitos*/    
             function division($var1, $var2){
                 return $var1 / $var2;
             }
+        /* Funcion que devuelve el resto*/
             function modulo($var1, $var2){
                 return $var1 % $var2;
             }
@@ -51,7 +64,7 @@
                 if(!empty($_POST['var1']) && !empty($_POST['var2'])){
                     $variable1 = $_POST['var1'];
                     $variable2 = $_POST['var2'];
-
+                /*Dependiendo del valor que introduzcan en el formulario, el programa realizara distintas operaciones*/
                 $operacion = $_POST['calc'];
                     if($operacion == 'suma'){
                         print "El resultado de la suma es " . suma($variable1, $variable2);
@@ -60,13 +73,13 @@
                         print "El resultado de la resta es " . resta($variable1, $variable2);
                     }
                     else if($operacion == 'multiplicacion'){
-                        print "El resultado de la resta es " . multiplicacion($variable1, $variable2);
+                        print "El resultado de la multiplicacion es " . multiplicacion($variable1, $variable2);
                     }
                     else if($operacion == 'division'){
-                        print "El resultado de la resta es " . division($variable1, $variable2);
+                        print "El resultado de la division es " . division($variable1, $variable2);
                     }
                     else if($operacion == 'modulo'){
-                        print "El resultado de la resta es " . modulo($variable1, $variable2);
+                        print "El resto es " . modulo($variable1, $variable2);
                     }
                 } else{
                     print "LOS DATOS NO SON VALIDOS";
