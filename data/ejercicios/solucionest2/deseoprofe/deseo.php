@@ -9,11 +9,17 @@
             print "<hr>";
             //OPCION 1
             $sesiondecodif = json_decode($sesioncodif, true);
-            var_dump($sesiondecodif);
-            //OPCION 2: OBJETO
-            $sesiondecodif = json_decode($sesioncodif)
-        }
+            //var_dump($sesiondecodif);
+            //$_SESSION["listadeseo"][4] = "Porsche";
+            //$sesiondecodif-> {'listadeseo'}[6]= "lampara";
+            //var_dump($sesiondecodif);
+            $miarray=get_object_vars($sesiondecodif);
+            var_dump($miarray);
+            for($i = 0 ; $i< count($miarray, COUNT_RECURSIVE)-1; $i++){
+                print "<br>Elemento $i es:" . $miarray['listadeseo'][$i];
 
+            }
+        }
     }
 ?>
 
