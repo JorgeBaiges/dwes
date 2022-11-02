@@ -8,11 +8,18 @@
 </head>
 <body>
     <?php
+    /*
+     * @author <Jorge Baiges Ruiz>
+     * @param int numero1
+     * @param int numero2
+     * @param int x
+     * @param int resultado
+     */
         $numero1 = 0;
         $numero2 = 1;
         $x = 1;
         $resultado = 0;
-        print "<h1>Sucesion de Fibonacci</h1>";
+        print "<h1>EJercicio 4</h1>";
         print $numero1 . ", ";
         print $numero2;
         for($x = 1; $x <= 8; $x++){

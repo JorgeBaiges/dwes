@@ -11,7 +11,7 @@
             const NUMERO = 169;
             $contador = 0;
             $x = 1;
-            print "<h1>Numeros Divisores</h1>";
+            print "<h1>Ejercicio 5</h1>";
             print "Los divisores de " . NUMERO . " son: ";
             for($x = 1 ; $x<= NUMERO ; $x++){
                 if(NUMERO % $x == 0){
