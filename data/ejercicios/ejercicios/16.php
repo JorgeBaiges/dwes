@@ -22,7 +22,7 @@
                         foreach ($_POST['lista'] as $elemento){
                             /*No entendi muy bien a lo que se referia el comentario en cuanto a tipo hidden, asi que he supuesto que la informacion 
                             añadida a los lis deberia ser oculta */
-                            print '<li><input type="hidden" name="lista[]" value ="' . $elemento . '"</li>';
+                            print '<li><input type="hidden" name="lista[]" value ="" . $elemento . ""</li>';
 
                         }
                     }
