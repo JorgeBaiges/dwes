@@ -35,7 +35,5 @@
                 $factorial->factoriales($_POST["numfac"]);
             }
         ?>
-
-        
     </body>
 </html>

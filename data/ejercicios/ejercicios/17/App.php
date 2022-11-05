@@ -2,6 +2,10 @@
 
 class App{
 
+    /*
+    * @author <Jorge Baiges Ruiz>
+    */
+
     public function fibonacci($valor1, $valor2){
         print "<br>Secuencia de Fibonacci<br><br>";
         $fib = [$valor1, $valor2];
@@ -13,21 +17,20 @@ class App{
 
         }
     }
-
+    /*Funcion potencias2 */
     public function potencias2(){
         print "<br>Potencias de dos hasta elevado a 24<br><br>";
         $potencia2 = [];
         for($i=1;$i<=24;$i++){
             $resultado = 2**$i;
-            $potencia2[] = $resultado; 
+            $potencia2[] = $resultado;
         }
         foreach($potencia2 as $elemento){
             print $elemento . " ";
 
         }
-
     }
-
+    /*Funcion factoriales */
     public function factoriales($numero){
         $factorial = 1;
         $factores = [];
@@ -42,7 +45,7 @@ class App{
         }
 
     }
-
+    /*Funcion numeros primos */
     public function primos($inicio, $final){
         print "<br>Los numeros primos entre 1 y 10000<br><br>";
         $primos = [];
